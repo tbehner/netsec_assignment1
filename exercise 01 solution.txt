@@ -3,11 +3,11 @@ Assignment 1
 
 Task 1
 --------
-Heartbleed is an extension for the TLS implementation of OpenSSL.  It is used to
+Heartbeat is an extension for the TLS implementation of OpenSSL.  It is used to
 see if the connection to a server is still alive.  This is done by sending any
 data and the server will send the same information back.  The bug is that
-Heartbleed won't check if the quoted length of the sent data and the real length
-of the sent data match.  If this differs, Heartbleed might copy too much data
+Heartbeat won't check if the quoted length of the sent data and the real length
+of the sent data match.  If this differs, Heartbeat might copy too much data
 from the buffer, so that it sends content from the local memory.  The attacker
 can get up to 64KB of the RAM and even increase the size of stolen data by
 sending multiple requests.
@@ -44,7 +44,8 @@ Task 4
 --------
 a)
     1.  RockYou is an app and game company, that was hacked in 2009.
-        32.603.388 were stolen, all have been stored in clear text before.
+        32.603.388 passwords were stolen, all have been stored in clear text
+        before.
 
     2.  Many users have the same password.
         32.603.388 were stolen
@@ -53,7 +54,7 @@ a)
         passwords and some passwords are used by much more people.
 
         Most Passwords in the list contain names, real words and sequences of
-        letter or numbers and have a size from around 8-10 characters.
+        letters or numbers and have a size from around 8-10 characters.
 
     3.  Strong passwords are quite long, contain many different characters, no
         names or words and no sequences, It is harder to guess/test a password that

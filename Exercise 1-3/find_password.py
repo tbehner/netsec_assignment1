@@ -16,7 +16,7 @@ def splitInWords(line):
 def readFile(file_name):
     with open(file_name) as f:
         lines = f.readlines()
-        return lines
+    return lines
 
 # read file and return all lines
 def findPassword(lines):
@@ -26,12 +26,11 @@ def findPassword(lines):
         for word in words:
             encrypted_word = encryptWord(word, "Ae")
             if encrypted_word == "Aedm1ab9f4MjA":
-                print word
-                print encrypted_word
+                return (word, encrypted_word)
             #print "%s %s" % (word, encryptWord(word, "Ae"))
 
 
 # read file and find the password in it
 file_name = "rfc7511.txt"
 lines = readFile(file_name)
-findPassword(lines)
+print("word: {0[0]}\nencrypted word: {0[1]}".format(findPassword(lines)))
