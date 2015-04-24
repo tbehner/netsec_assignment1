@@ -1,0 +1,74 @@
+1)
+Heartbleed is an extension for the TLS implementation of OpenSSL.
+It is used to see if the connection to a server is still alive.
+This is done by sending any data and the server will send the same information back.
+The bug is that Heartbleed won't check if the quoted length of the sent data and the real length of the sent data match.
+If this differs, Heartbleed might copy too much data from the buffer, so that it sends content from the local memory.
+The attacker can get up to 64KB of the RAM and even increase the size of stolen data by sending multiple requests.
+
+2)
+Denial-of-Service attack (DoS)
+
+During a DoS attack a server receives very many requests and might even give up serving any data.
+The attacker could use only one computer and establish many connections from this computer to flood the server
+or use many computers, where each establish many or even only some connections to the server. The last method is called DDoS.
+
+Gihub 2015
+Coders, researcher and research instituts as well use github and might have been affected.
+Information about this attack have been distributed on several online magazines such as heise and are trustful.
+
+3)
+see source code
+
+.htpasswd is a file for Apache server that contains a set of username and password (username:password)
+in .htaccess the admin can define that this user:password must be entered to have access to folder and files.
+The username is stored in clear text, the password encrypted (c crypt)
+
+This htpasswd defines two username:password sets.
+netsec_temp with the password from lecture.
+netsec with password "torturous"
+
+4.a)
+1.
+RockYou is an app and game company, that was hacked in 2009.
+32.603.388 were stolen, all have been stored in clear text before.
+
+2.
+Many users have the same password.
+32.603.388 were stolen
+14.344.391 are unique
+2,27 people use the same password in average. Probably many have unique passwords and some passwords are used by much more people.
+
+Most Passwords in the list contain names, real words and sequences of letter or numbers and have a size from around 8-10 characters
+
+3.
+Strong passwords are quite long, contain many different characters, no names or words and no sequences,
+It is harder to guess/test a password that is more complex, because there are much more possibilities that you have to test and each takes a little while.
+Everything that could help the hacker, like a list of all English words, should be considered, so that the own password is nothing that appears in that.
+Weak passwords don't follow these rules. This could be a word or a name, in worst case something that is associated with the user,
+like the own name or the name of some related person or a hobby.
+
+4.b)
+Let n be the number of characters that could be used to define a password and l be the length of the password
+Options to build passwords with this length: n^l
+E.g.:
+    26^5 = 11.881.376
+    26^7 = 8.031.810.176
+    52^5 = 380.204.032
+    52^7 = 10.280.717.030.000
+The more letters the more combinations, the longer the more combinations.
+
+
+
+5)
+1.
+98.114.205.102 (donnyworld / itm-mcell-u)
+192.150.11.111 (microsoft-ds)
+
+2.
+
+3.
+
+
+4.
+16 seconds
