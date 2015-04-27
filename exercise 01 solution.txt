@@ -83,7 +83,16 @@ Task 5
 1.
     98.114.205.102 (donnyworld / itm-mcell-u)
     192.150.11.111 (microsoft-ds)
-
-2.
-3.
+2. It could be located in the united states since the address is in a block
+   which is owned by Verizon.
+3. There are five Three-Way-Handshakes contained in the dump file (1, 5, 35, 51,
+   68), so this would be the number of TCP connections.
 4. 16 seconds
+5. The targeted operating system was Windows 2000. The service was Samba.
+6.
+7.
+8. Since the attack lasts only very short time, the attack was probably
+automated.
+9. The attack was successfull because of the 'User logged in' message in packet
+59 and the file transmission afterwards. The file was successfully downloaded as
+stated in packet 340.
