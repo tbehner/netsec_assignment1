@@ -91,7 +91,8 @@ Task 5
 5.  The targeted operating system was Windows 2000. The service was Samba.
 6.  Sketch of attack:
         Step 1: The "attacker" connects to the machine, without doing anything. Maybe just to find out if the target machine is reachable. (1)
-        Step 2: He sends a request to get information about the target machine, such as OS (5)
+        Step 2: He sends a request to maybe get information about the target machine, such as OS (5)
+                Then many "1" are sent, so this could maybe cause an buffer overflow, to reach control over the machine.
         Step 3: He initializes a ftp connection to copy a file called ssms.exe (36)
         Step 4: He logs in with user data on ftp and starts copying ssms.exe (50)
         Step 5: The program is sent to the target machine (68)
