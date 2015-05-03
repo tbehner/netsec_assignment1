@@ -83,25 +83,25 @@ Task 5
 1.
     98.114.205.102 (donnyworld / itm-mcell-u)
     192.150.11.111 (microsoft-ds)
-2. It could be located in the united states since the address is in a block
-   which is owned by Verizon.
-3. There are five Three-Way-Handshakes contained in the dump file (1, 5, 35, 51,
-   68), so this would be the number of TCP connections.
-4. 16 seconds
-5. The targeted operating system was Windows 2000. The service was Samba.
-6. Sketch of attack:
-   Step 1: The "attacker" connects to the machine, without doing anything. Maybe just to find out if the target machine is reachable. (1)
-   Step 2: He sends a request to get information about the target machine, such as OS (5)
-   Step 3: He initializes a ftp connection to copy a file called ssms.exe (36)
-   Step 4: He logs in with user data on ftp and starts copying ssms.exe (50)
-   Step 5: The program is sent to the target machine (68)
-   Step 6: Still connected to the target machine from step 3, he starts ssms.exe
-7. A Windows program was sent starting at second 6.27 (ssms.exe), this might be malware.
-   Sha512 of sent data:
-   e817115732744d73b036df477bd56f15121eabd2ca3010638f6de37d5da942b51c804d583ab5eb4b37c07cb03264bd48f40a976f9d9780fbe5145d44deadcb6e
-8. Since the attack lasts only very short time, the attack was probably automated.
-9. The attack was successfull because of the 'User logged in' message in packet
-   59 and the file transmission afterwards. The file was successfully downloaded as
-   stated in packet 340.
+2.  It could be located in the united states since the address is in a block
+    which is owned by Verizon.
+3.  There are five Three-Way-Handshakes contained in the dump file (1, 5, 35, 51,
+    68), so this would be the number of TCP connections.
+4.  16 seconds
+5.  The targeted operating system was Windows 2000. The service was Samba.
+6.  Sketch of attack:
+        Step 1: The "attacker" connects to the machine, without doing anything. Maybe just to find out if the target machine is reachable. (1)
+        Step 2: He sends a request to get information about the target machine, such as OS (5)
+        Step 3: He initializes a ftp connection to copy a file called ssms.exe (36)
+        Step 4: He logs in with user data on ftp and starts copying ssms.exe (50)
+        Step 5: The program is sent to the target machine (68)
+        Step 6: Still connected to the target machine from step 3, he starts ssms.exe
+7.  A Windows program was sent starting at second 6.27 (ssms.exe), this might be malware.
+    Sha512 of sent data:
+    e817115732744d73b036df477bd56f15121eabd2ca3010638f6de37d5da942b51c804d583ab5eb4b37c07cb03264bd48f40a976f9d9780fbe5145d44deadcb6e
+8.  Since the attack lasts only very short time, the attack was probably automated.
+9.  The attack was successfull because of the 'User logged in' message in packet
+    59 and the file transmission afterwards. The file was successfully downloaded as
+    stated in packet 340.
 10. He copied a file called ssms.exe and executed it on the target machine. If this is malware, it could get control over the target machine.
 11. You could check the incoming data (especially copied files) against a set of known hashes that belong to malware.
